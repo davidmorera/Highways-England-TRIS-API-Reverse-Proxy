@@ -2,6 +2,7 @@
  * This is a simple express server, to show how to proxy weather rquest to DarkSky API.
  */
 var express = require('express');
+var cors = require('cors');
 var bodyParser = require('body-parser');
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
@@ -9,7 +10,8 @@ var port = process.env.PORT || 8080;
 
 // Configure app to use bodyParser to parse json data
 var app = express(); 
-var server = require('http').createServer(app);  
+var server = require('http').createServer(app); 
+app.use(cors()); 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
