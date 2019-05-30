@@ -3,7 +3,7 @@
   "description": "This is for the api server",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "server": "node server.js"
   },
   "dependencies": {
       "express": "^4.15.2",
