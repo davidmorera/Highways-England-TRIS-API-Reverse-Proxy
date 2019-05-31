@@ -3,6 +3,8 @@
  */
 var express = require('express');
 var bodyParser = require('body-parser');
+var cors = require('cors')
+
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
 var port = process.env.PORT || 8080;
@@ -10,6 +12,7 @@ var port = process.env.PORT || 8080;
 // Configure app to use bodyParser to parse json data
 var app = express(); 
 var server = require('http').createServer(app); 
+app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
