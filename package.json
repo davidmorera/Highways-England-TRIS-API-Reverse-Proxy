@@ -9,6 +9,7 @@
       "express": "^4.15.2",
       "body-parser": "^1.17.1",
       "isomorphic-fetch": "^2.2.1",
-      "es6-promise": "^4.1.0"
+      "es6-promise": "^4.1.0",
+      "cors": "^2.8.4"
   }
 }
