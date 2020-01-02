@@ -1,7 +1,9 @@
 
 ## Overview of the Server
 
-This is the API server to proxy client requests to Highways England TRIS API that allows CORS
+This is the API server to proxy client requests to Highways England TRIS Traffic Flow API that allows CORS.
+
+Feedback and contributions welcome - please raise an issue or pull request.
 
 Based on https://github.com/cloudmu/darksky
 
